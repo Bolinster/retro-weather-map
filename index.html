@@ -34,17 +34,6 @@
         }
       },
       {
-        id: "state-borders",
-        type: "line",
-        source: "mapbox-streets",
-        "source-layer": "admin",
-        filter: ["==", ["get", "admin_level"], 1],
-        paint: {
-          "line-color": "#ffffff",
-          "line-width": 2
-        }
-      },
-      {
         id: "city-labels",
         type: "symbol",
         source: "mapbox-streets",
