@@ -35,6 +35,24 @@
         }
       },
       {
+        id: "land",
+        type: "fill",
+        source: "mapbox-streets",
+        "source-layer": "land",
+        paint: {
+          "fill-color": "#003366"
+        }
+      },
+      {
+        id: "water",
+        type: "fill",
+        source: "mapbox-streets",
+        "source-layer": "water",
+        paint: {
+          "fill-color": "#001a33"
+        }
+      },
+      {
         id: "city-labels",
         type: "symbol",
         source: "mapbox-streets",
@@ -56,7 +74,7 @@
   const map = new mapboxgl.Map({
     container: "map",
     style: retroStyle,
-    center: [-98.5795, 39.8283], // Center of USA
+    center: [-98.5795, 39.8283], // Centered on USA
     zoom: 4
   });
 </script>
